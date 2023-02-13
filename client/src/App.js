@@ -1,8 +1,21 @@
+import {ChakraProvider} from '@chakra-ui/react'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Navbar from './conponents/Navbar';
+
 function App() {
   return (
-    <div>
-     <h1>Marilyn Monroe</h1>
-    </div>
+    <ChakraProvider>
+      <Router>
+        <Navbar/>
+        <main>{
+          /*<Routes></Routes>
+          <Routes></Routes>
+          <Routes></Routes>
+          <Routes></Routes>
+        <Routes></Routes>*/}
+        </main>
+      </Router>
+    </ChakraProvider>
   );
 }
 
