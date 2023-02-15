@@ -2,9 +2,7 @@
 import mongoose from "mongoose";
 
 const connectDatabase = async() => {
-    console.log(process.env.MONGO_URI)
-
-    try {
+     try {
         mongoose.set('strictQuery', false);
         const connect = await mongoose.connect(process.env.MONGO_URI, {
             useUnifiedTopology: true,
